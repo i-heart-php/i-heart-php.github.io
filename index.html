@@ -39,12 +39,22 @@
     <footer>
         <p>Proudly made with <i class="fab fa-creative-commons"></i> <a rel="noopener noreferrer nofollow" target="_blank" href="https://opensource.creativecommons.org/">open-source software</a>, handcrafted with <i class="fas fa-heart"></i> in Ontario, Canada and powered by <i class="devicon-github-plain"></i> <a rel="noopener noreferrer nofollow" target="_blank" href="https://pages.github.com/">GitHub Pages</a>.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script>
-        window.addEventListener('load', function () {
+        var loaded = false;
+        window.addEventListener("mousemove", init());
+        window.addEventListener("scroll", init());
+        window.addEventListener("keydown", init());
+        window.addEventListener("resize", init());
+        function init() {
+            if (loaded) return;
             var opts = {
                 strings: ["Hi, I'm Mike!&nbsp;"],
                 speed: 50,
-                waitUntilVisible: true
+                waitUntilVisible: true,
+                startDelay: 600
             }
             new TypeIt(".intro", opts).go();
             tippy('[data-tippy-content]', {
@@ -53,10 +63,9 @@
                 inertia: true,
                 placement: 'bottom',
             });
-        });
+            loaded = true;
+        }
     </script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
-    <script async src="https://unpkg.com/@popperjs/core@2"></script>
-    <script async src="https://unpkg.com/tippy.js@6"></script>
+   
 </body>
 </html>
