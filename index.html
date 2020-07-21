@@ -9,10 +9,11 @@
 
 	<link rel="icon" href="favicon.ico" type="image/png" />
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300|Source+Code+Pro:wght@900&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400|Source+Code+Pro:wght@900&display=swap">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/translucent.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale-extreme.css" />
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/themes/white-blue.css">
@@ -20,8 +21,8 @@
 <body>
 	<main>
 		<div class="intro"></div>
-		<div class="tagline">Full Stack Dev | <i class="devicon-html5-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i  class="devicon-php-plain colored"></i> <i  class="devicon-mysql-plain colored"></i> <i  class="devicon-wordpress-plain colored"></i> <i class="devicon-nodejs-plain colored"></i> <i class="devicon-react-original colored"></i></div>
-		<div class="icons-social">
+		<div class="tagline">Full Stack Dev <i class="fas fa-chevron-right"></i> <i class="devicon-html5-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i  class="devicon-php-plain colored"></i> <i  class="devicon-mysql-plain colored"></i> <i  class="devicon-wordpress-plain colored"></i> <i class="devicon-nodejs-plain colored"></i> <i class="devicon-react-original colored"></i> <i class="fas fa-chevron-left"></i></div>
+        <div class="icons-social">
 			<a target="_blank" href="https://github.com/i-heart-php"><i data-tippy-content="Github" class="fab fa-github"></i></a>
 			<a target="_blank" href="https://linkedin.com/in/mvardy"><i data-tippy-content="LinkedIn" class="fab fa-linkedin"></i></a>
 			<a target="_blank" href="https://codepen.io/i-heart-php"><i data-tippy-content="Codepen" class="fab fa-codepen"></i></a>
@@ -39,10 +40,11 @@
         }
         new TypeIt(".intro", opts).go();
         tippy('[data-tippy-content]', {
-            theme: 'light',
+            theme: 'translucent',
             animation: 'scale-extreme',
+            inertia: true,
+            placement: 'bottom',
         });
     </script>
-
 </body>
 </html>
