@@ -25,9 +25,12 @@
 </head>
 <body>
 	<main>
-		<div class="intro"></div>
+		<div class="intro"><i class="fas fa-dollar-sign">&nbsp;</i><span class="into-text"></span></div>
 		<div class="tagline">
-            <span>Full Stack Dev</span> <i class="fas fa-chevron-right"></i> <i class="devicon-html5-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i  class="devicon-php-plain colored"></i> <i  class="devicon-mysql-plain colored"></i> <i  class="devicon-wordpress-plain colored"></i> <i class="devicon-nodejs-plain colored"></i> <i class="devicon-react-original colored"></i> <i class="fas fa-chevron-left"></i>
+            <span>Full Stack Dev</span>
+        </div>
+        <div class="tagline">
+            <i class="fas fa-chevron-right"></i> <i class="devicon-html5-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i  class="devicon-php-plain colored"></i> <i  class="devicon-mysql-plain colored"></i> <i  class="devicon-wordpress-plain colored"></i> <i class="devicon-nodejs-plain colored"></i> <i class="devicon-react-original colored"></i> <i class="fas fa-chevron-left"></i>
         </div>
         <div class="icons-social">
 			<a rel="noopener noreferrer nofollow" target="_blank" href="https://github.com/i-heart-php"><i data-tippy-content="Github" class="fab fa-github"></i></a>
@@ -52,11 +55,11 @@
             if (loaded) return;
             var opts = {
                 strings: ["Hi, I'm Mike!&nbsp;"],
-                speed: 50,
+                speed: 45,
                 waitUntilVisible: true,
-                startDelay: 600
+                startDelay: 1600
             }
-            new TypeIt(".intro", opts).go();
+            new TypeIt(".into-text", opts).go();
             tippy('[data-tippy-content]', {
                 theme: 'translucent',
                 animation: 'scale-extreme',

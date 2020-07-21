@@ -23,13 +23,9 @@ main>.intro {
     font-weight: 900;
 }
 
-main>.tagline {
-    font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
-    margin: 30px 10px 30px;
-}
-
-main>.tagline span {
-    font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+main .tagline {
+    font-size: 30px;
+    margin: 30px 0;
 }
 
 .icons-social i {
@@ -38,10 +34,6 @@ main>.tagline span {
 
 .icons-social i {
     padding: 10px;
-}
-
-i.fas.fa-chevron-right {
-    padding-left: 30px;
 }
 
 i.fa-heart {
