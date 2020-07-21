@@ -12,3 +12,7 @@ body {
 .icons-social a svg path {
     fill: #0277BD;
 }
+
+.devicon-html5-plain:before {
+    color: #e34f26;
+}

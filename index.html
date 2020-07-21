@@ -9,8 +9,10 @@
 
 	<link rel="icon" href="favicon.ico" type="image/png" />
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300|Source+Code+Pro:wght@900&display=swap" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300|Source+Code+Pro:wght@900&display=swap">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/themes/white-blue.css">
@@ -18,15 +20,17 @@
 <body>
 	<main>
 		<div class="intro"></div>
-		<div class="tagline">Full Stack Dev | Growth Hacker | Digital Direction Expert | Dad</div>
+		<div class="tagline">Full Stack Dev | <i class="devicon-html5-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i  class="devicon-php-plain colored"></i> <i  class="devicon-mysql-plain colored"></i> <i  class="devicon-wordpress-plain colored"></i> <i class="devicon-nodejs-plain colored"></i> <i class="devicon-react-original colored"></i></div>
 		<div class="icons-social">
-			<a target="_blank" href="https://github.com/i-heart-php"><i class="fab fa-github"></i></a>
-			<a target="_blank" href="https://linkedin.com/in/mvardy"><i class="fab fa-linkedin"></i></a>
-			<a target="_blank" href="https://codepen.io/i-heart-php"><i class="fab fa-codepen"></i></a>
-            <a target="_blank" href="resume.pdf"><i class="fa fa-link"></i></a>
+			<a target="_blank" href="https://github.com/i-heart-php"><i data-tippy-content="Github" class="fab fa-github"></i></a>
+			<a target="_blank" href="https://linkedin.com/in/mvardy"><i data-tippy-content="LinkedIn" class="fab fa-linkedin"></i></a>
+			<a target="_blank" href="https://codepen.io/i-heart-php"><i data-tippy-content="Codepen" class="fab fa-codepen"></i></a>
+            <a target="_blank" href="resume.pdf"><i data-tippy-content="Resume" class="fa fa-link"></i></a>
     </div>
 	</main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script>
         var opts = {
             strings: ["Hi, I'm Mike!&nbsp;"],
@@ -34,6 +38,11 @@
             waitUntilVisible: true
         }
         new TypeIt(".intro", opts).go();
+        tippy('[data-tippy-content]', {
+            theme: 'light',
+            animation: 'scale-extreme',
+        });
     </script>
+
 </body>
 </html>

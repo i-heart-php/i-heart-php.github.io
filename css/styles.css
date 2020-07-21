@@ -43,6 +43,7 @@ body {
 main {
     display: grid;
     text-align: center;
+    min-width: 70%;
 }
 
 main>.intro {
