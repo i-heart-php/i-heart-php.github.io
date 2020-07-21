@@ -5,6 +5,7 @@ body {
     color: #0277BD;
 }
 
+a:-webkit-any-link,
 .icons-social a {
     color: #0277BD;
 }
@@ -98,7 +99,11 @@ body {
 body,
 .icons-social a,
 a,
-a:visited {
+a:-webkit-any-link,
+a:link,
+a:visited,
+a:hover,
+a:active {
     -webkit-animation: pulsate 80s linear infinite;
     animation: pulsate 80s linear infinite
 }
