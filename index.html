@@ -5,10 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Mike Vardy | Full Stack Dev</title>
-
+	<title>Mike Vardy | Full Stack Dev | Ontario, Canada</title>
+    <meta name="description" content="Mike Vardy is an Onatrio-based Full Stack Web Developer" />
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//use.fontawesome.com' />
+    <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+    <link rel='dns-prefetch' href='//unpkg.com' />
+    
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400|Source+Code+Pro:wght@900&display=swap">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
@@ -25,31 +30,33 @@
             <span>Full Stack Dev</span> <i class="fas fa-chevron-right"></i> <i class="devicon-html5-plain colored"></i> <i class="devicon-javascript-plain colored"></i> <i  class="devicon-php-plain colored"></i> <i  class="devicon-mysql-plain colored"></i> <i  class="devicon-wordpress-plain colored"></i> <i class="devicon-nodejs-plain colored"></i> <i class="devicon-react-original colored"></i> <i class="fas fa-chevron-left"></i>
         </div>
         <div class="icons-social">
-			<a target="_blank" href="https://github.com/i-heart-php"><i data-tippy-content="Github" class="fab fa-github"></i></a>
-			<a target="_blank" href="https://linkedin.com/in/mvardy"><i data-tippy-content="LinkedIn" class="fab fa-linkedin"></i></a>
-			<a target="_blank" href="https://codepen.io/i-heart-php"><i data-tippy-content="Codepen" class="fab fa-codepen"></i></a>
-            <a target="_blank" href="resume.pdf"><i data-tippy-content="Resume" class="fa fa-link"></i></a>
+			<a rel="noopener noreferrer nofollow" target="_blank" href="https://github.com/i-heart-php"><i data-tippy-content="Github" class="fab fa-github"></i></a>
+			<a rel="noopener noreferrer nofollow" target="_blank" href="https://linkedin.com/in/mvardy"><i data-tippy-content="LinkedIn" class="fab fa-linkedin"></i></a>
+			<a rel="noopener noreferrer nofollow" target="_blank" href="https://codepen.io/i-heart-php"><i data-tippy-content="Codepen" class="fab fa-codepen"></i></a>
+            <a rel="noopener noreferrer nofollow" target="_blank" href="resume.pdf"><i data-tippy-content="Resume" class="fa fa-link"></i></a>
     </div>
 	</main>
     <footer>
-        <p>Proudly made with <i class="fab fa-creative-commons"></i> <a href="https://opensource.creativecommons.org/">open-source software</a>, handcrafted with <i class="fas fa-heart"></i> in Ontario, Canada and powered by <i class="devicon-github-plain"></i> <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+        <p>Proudly made with <i class="fab fa-creative-commons"></i> <a rel="noopener noreferrer nofollow" target="_blank" href="https://opensource.creativecommons.org/">open-source software</a>, handcrafted with <i class="fas fa-heart"></i> in Ontario, Canada and powered by <i class="devicon-github-plain"></i> <a rel="noopener noreferrer nofollow" target="_blank" href="https://pages.github.com/">GitHub Pages</a>.</p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
     <script>
-        var opts = {
-            strings: ["Hi, I'm Mike!&nbsp;"],
-            speed: 50,
-            waitUntilVisible: true
-        }
-        new TypeIt(".intro", opts).go();
-        tippy('[data-tippy-content]', {
-            theme: 'translucent',
-            animation: 'scale-extreme',
-            inertia: true,
-            placement: 'bottom',
+        window.addEventListener('load', function () {
+            var opts = {
+                strings: ["Hi, I'm Mike!&nbsp;"],
+                speed: 50,
+                waitUntilVisible: true
+            }
+            new TypeIt(".intro", opts).go();
+            tippy('[data-tippy-content]', {
+                theme: 'translucent',
+                animation: 'scale-extreme',
+                inertia: true,
+                placement: 'bottom',
+            });
         });
     </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+    <script async src="https://unpkg.com/@popperjs/core@2"></script>
+    <script async src="https://unpkg.com/tippy.js@6"></script>
 </body>
 </html>
