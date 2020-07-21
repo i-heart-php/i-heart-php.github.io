@@ -19,89 +19,84 @@ body {
 
 
 @-webkit-keyframes pulsate {
-    0% {
-        color: #333;
+    14% {
+        color: #333 !important;
         background: #fff
     }
 
-    7% {
-        color: #0c85ff;
-        background: #001F3F
-    }
-
     28% {
-        color: #165656;
+        color: #165656 !important;
         background: #39CCCC
     }
 
     35% {
-        color: #112c20;
+        color: #112c20 !important;
         background: #3D9970
     }
 
     42% {
-        color: #124f18;
+        color: #124f18 !important;
         background: #2ECC40
     }
 
     49% {
-        color: #00672d;
+        color: #00672d !important;
         background: #01FF70
     }
 
     56% {
-        color: #665700;
+        color: #665700 !important;
         background: #FFDC00
     }
 
     63% {
-        color: #ffd6b4;
+        color: #ffd6b4 !important;
         background: #FF851B
     }
 
     70% {
-        color: #ffd1cf;
+        color: #ffd1cf !important;
         background: #FF4136
     }
 
     77% {
-        color: #e44e99;
+        color: #e44e99 !important;
         background: #85144B
     }
 
     84% {
-        color: #f9a2e6;
+        color: #f9a2e6 !important;
         background: #F012BE
     }
 
     91% {
-        color: #e679f6;
+        color: #e679f6 !important;
         background: #B10DC9
     }
 
     95% {
-        color: #5e5e5e;
+        color: #5e5e5e !important;
         background: #111
     }
 
     96% {
-        color: #919191;
+        color: #919191 !important;
         background: #ddd
     }
 
     98% {
-        color: #5d5d5d;
+        color: #5d5d5d !important;
         background: #aaa
     }
 
     100% {
-        color: #b3b3b3;
+        color: #b3b3b3 !important;
         background: #fff
     }
 }
 
 body,
 .icons-social a {
-    -webkit-animation: pulsate 100s linear infinite;
-    animation: pulsate 100s linear infinite
+    -webkit-animation: pulsate 80s linear infinite;
+    animation: pulsate 80s linear infinite
 }
