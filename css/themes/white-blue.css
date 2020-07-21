@@ -20,6 +20,11 @@ a:-webkit-any-link,
 
 
 @-webkit-keyframes pulsate {
+    0% {
+        background: #FAFAFA;
+        color: #0277BD;
+    }
+
     14% {
         color: #333 !important;
         background: #fff
