@@ -12,6 +12,7 @@ main {
     display: grid;
     text-align: center;
     min-width: 70%;
+    flex-grow: 1
 }
 
 main>.intro {
@@ -39,6 +40,23 @@ main>.tagline span {
 
 i.fas.fa-chevron-right {
     padding-left: 30px;
+}
+
+i.fa-heart {
+    color: #FF4136;
+}
+
+footer {
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-top: auto;
+    padding: 0 0 30px 0;
+    max-width: 250px;
+}
+
+footer p {
+    text-align: center;
 }
 
 @media (min-width: 640px) {
