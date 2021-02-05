@@ -13,7 +13,7 @@
     <link rel='dns-prefetch' href='//use.fontawesome.com' />
     <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
     <link rel='dns-prefetch' href='//unpkg.com' />
-    
+
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400|Source+Code+Pro:wght@900&display=swap">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
@@ -46,7 +46,10 @@
 			<a rel="noopener noreferrer nofollow" target="_blank" href="https://linkedin.com/in/mvardy"><i data-tippy-content="LinkedIn" class="fab fa-linkedin"></i></a>
 			<a rel="noopener noreferrer nofollow" target="_blank" href="https://codepen.io/i-heart-php"><i data-tippy-content="Codepen" class="fab fa-codepen"></i></a>
             <a rel="noopener noreferrer nofollow" target="_blank" href="resume.pdf"><i data-tippy-content="Résumé" class="fa fa-link"></i></a>
-    </div>
+        </div>
+        <h3>
+            Hey! I built something new I'll take you there in <span id="countdown">20</span> secs
+        </h3>
 	</main>
     <footer>
         <p>Proudly made with <i class="fab fa-creative-commons"></i> <a rel="noopener noreferrer nofollow" target="_blank" href="https://opensource.creativecommons.org/">open-source software</a>, handcrafted with <i class="fas fa-heart"></i> in Ontario, Canada and powered by <i class="devicon-github-plain"></i> <a rel="noopener noreferrer nofollow" target="_blank" href="https://pages.github.com/">GitHub Pages</a>.</p>
@@ -77,7 +80,23 @@
             });
             loaded = true;
         }
+
+        // Total seconds to wait
+        var seconds = 19;
+
+        function countdown() {
+            seconds = seconds - 1;
+            if (seconds < 0) {
+                window.location = "https://i-heart-php.github.io/me/";
+            } else {
+                document.getElementById("countdown").innerHTML = seconds;
+                window.setTimeout("countdown()", 1000);
+            }
+        }
+
+        countdown();
+
     </script>
-   
+
 </body>
 </html>

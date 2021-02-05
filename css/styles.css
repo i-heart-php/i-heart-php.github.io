@@ -28,6 +28,11 @@ main .tagline {
     margin: 30px 0;
 }
 
+h3 {
+    margin: 5em 0;
+    font-size: 2rem;
+}
+
 .icons-social i {
     font-size: 3rem;
 }
